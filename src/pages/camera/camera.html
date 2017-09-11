@@ -1,0 +1,25 @@
+<!--
+  Generated template for the CameraPage page.
+
+  See http://ionicframework.com/docs/components/#navigation for more info on
+  Ionic pages and navigation.
+-->
+<ion-header>
+  <ion-navbar>
+    <ion-title>Camera</ion-title>
+  </ion-navbar>
+</ion-header>
+
+<ion-content padding>
+  <!-- No picture taken -->
+  <div *ngIf="!pictureSrc">
+    <p ion-text>No Picture taken.</p>
+    <button ion-button full (click)="takePicture()">Take Picture</button>
+  </div>
+  <!-- Picture taken -->
+  <div *ngIf="pictureSrc">
+    <img [src]="pictureSrc">
+    <button ion-button full (click)="addPictureToDatabase()">Send to Database</button>
+    <button ion-button full color="danger" (click)="cancel()">Cancel</button>
+  </div>
+</ion-content>
