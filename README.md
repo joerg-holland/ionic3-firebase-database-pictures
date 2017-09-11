@@ -41,48 +41,49 @@ a) Android Studio (v2.3.3) [https://developer.android.com/studio/](https://devel
 b) Android SDK-Tools (Revision 26.0.2)
   1. Android SDK-Tools [https://developer.android.com/studio/](https://developer.android.com/studio/) (Link available at the end of the site)
   2. Unzip everything and copy the 'tools'-folder to:
-    ```bash
-    "C:\Android\sdk"
-    ```
+   ```bash
+   "C:\Android\sdk"
+   ```
   3. Set the system variable (as administrator):
-    ```bash
-    $ sudo setx ANDROID_HOME "C:\Android\sdk" /M
-    ```
+  ```bash
+  $ sudo setx ANDROID_HOME "C:\Android\sdk" /M
+  ```
   4. Add to the path variable:
-    ```bash
-    $ set PATH=%PATH%;C:\Android\sdk\platforms
-    $ set PATH=%PATH%;C:\Android\sdk\tools
-    $ set PATH=%PATH%;C:\Android\sdk\tools\bin
-    ```
+  ```bash
+  $ set PATH=%PATH%;C:\Android\sdk\platforms
+  $ set PATH=%PATH%;C:\Android\sdk\tools
+  $ set PATH=%PATH%;C:\Android\sdk\tools\bin
+  ```
   5. Verifying the installation:
-    ```bash
-    $ sdkmanager --list
-    ```
+  ```bash
+  $ sdkmanager --list
+  ```
   6. Add the SDK-Platforms:
-    ```bash
-    $ sdkmanager "platforms;android-26"
-    ```
+  ```bash
+  $ sdkmanager "platforms;android-26"
+  ```
   7 . Add the SDK-Build-Tools:
-    ```bash
-    $ sdkmanager "build-tools;26.0.0"
-    ```
+  ```bash
+  $ sdkmanager "build-tools;26.0.0"
+  ```
+
 c) Gradle (v4.1) [https://gradle.org/releases/](https://gradle.org/releases/) (binary-only)
   1. Unzip everything and copy the 'tools'-folder to:
-    ```bash
-    "C:\Program Files\Gradle"
-    ```
+  ```bash
+  "C:\Program Files\Gradle"
+  ```
   2. Set the system variable (as administrator):
-    ```bash
-    $ sudo setx GRADLE_HOME "C:\Program Files\Gradle\bin"
-    ```
+  ```bash
+  $ sudo setx GRADLE_HOME "C:\Program Files\Gradle\bin"
+  ```
   4. Add to the path variable:
-    ```bash
-    $ set PATH=%PATH%;C:\Program Files\Gradle\bin
-    ```
+  ```bash
+  $ set PATH=%PATH%;C:\Program Files\Gradle\bin
+  ```
   5. Verifying the installation:
-    ```bash
-    $ gradle --version
-    ```
+  ```bash
+  $ gradle --version
+  ```
 
 ## How to configure Google Firebase?
 
